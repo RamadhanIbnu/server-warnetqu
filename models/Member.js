@@ -10,10 +10,10 @@ const memberSchema = new mongoose.Schema({
     gender: String,
     alamat: String,
     skill: String,
-    pc:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref:"pc-room"
-    }
+    // pc:{
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref:"pc-room"
+    // }
 });
 
 const Member = mongoose.model("member", memberSchema);
