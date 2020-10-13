@@ -8,7 +8,7 @@ const Member = require('../../models/Member');
 module.exports = {
     getAllMember: (req, res) =>{
         Member.find()
-        .populate("pc")
+        // .populate("pc")
         .then(result =>{
             res.status(200).json({
                 message: "get all member success ",
